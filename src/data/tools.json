@@ -1,0 +1,2044 @@
+[
+  {
+    "name": "Mode",
+    "website": "https://mode.com",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "Python",
+      "SQL",
+      "R"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Python & R notebooks",
+      "Calculated fields",
+      "Visualization",
+      "Explorations",
+      "SQL editor",
+      "drilldowns"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.5,
+      "y": 0.38
+    }
+  },
+  {
+    "name": "Tableau",
+    "website": "https://www.tableau.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Data Preparation",
+      "Data Analysis",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.4,
+      "y": 0.6
+    }
+  },
+  {
+    "name": "Qlik view",
+    "website": "https://www.qlik.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "interactive dashboards",
+      "Data Preparation",
+      "collaboration",
+      "discovery"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.3,
+      "y": 0.52
+    }
+  },
+  {
+    "name": "Power BI",
+    "website": "https://powerbi.microsoft.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "DAX"
+    ],
+    "dwIntegrations": [
+      "Azure SQL"
+    ],
+    "features": [
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.5,
+      "y": 0.45
+    }
+  },
+  {
+    "name": "Domo",
+    "website": "https://www.domo.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Embedded analytics",
+      "Data Sharing",
+      "Self-service",
+      "Data apps"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.6,
+      "y": 0.38
+    }
+  },
+  {
+    "name": "Whaly",
+    "website": "https://whaly.io",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift"
+    ],
+    "features": [
+      "Embedded analytics",
+      "Dashboard builder",
+      "Data exploration",
+      "Visualization",
+      "Data Sharing",
+      "Drill down"
+    ],
+    "nativeConnectors": 150,
+    "quadrant": {
+      "x": 3,
+      "y": 0.85
+    }
+  },
+  {
+    "name": "Alteryx",
+    "website": "https://www.alteryx.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.35
+    }
+  },
+  {
+    "name": "Looker",
+    "website": "https://www.looker.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "LookML"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Embedded analytics",
+      "Version control",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.9,
+      "y": 0.38
+    }
+  },
+  {
+    "name": "Metabase",
+    "website": "https://www.metabase.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Amazon Athena",
+      "Redshift",
+      "BigQuery",
+      "Clickhouse",
+      "Cube",
+      "druid",
+      "Exasol",
+      "Firebolt",
+      "MongoDB",
+      "Google analytics",
+      "Oracle",
+      "PostgreSQL"
+    ],
+    "features": [
+      "Self-service",
+      "SQL editor"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.5,
+      "y": 0.7
+    }
+  },
+  {
+    "name": "Sigma",
+    "website": "https://www.sigmacomputing.com",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift"
+    ],
+    "features": [
+      "Automatic SQL translation",
+      "Spreadsheet interface",
+      "Embedded analytics"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.8,
+      "y": 0.78
+    }
+  },
+  {
+    "name": "Y42",
+    "website": "https://www.y42.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "N/A"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Workflow Automation",
+      "Data Preparation",
+      "Data Integration",
+      "Visualization",
+      "Data Sharing"
+    ],
+    "nativeConnectors": 100,
+    "quadrant": {
+      "x": 2.7,
+      "y": 0.7
+    }
+  },
+  {
+    "name": "Gaphext",
+    "website": "https://www.graphext.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "Text query",
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Create no-code data models",
+      "ML models creation",
+      "Data Preparation",
+      "Data exploration"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.5,
+      "y": 0.7
+    }
+  },
+  {
+    "name": "Acho",
+    "website": "https://acho.io",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Data workflow automation",
+      "Business Intelligence",
+      "Workflow Automation",
+      "Data Engineering",
+      "Data warehousing",
+      "Data extraction",
+      "Data Modeling",
+      "Visualization",
+      "Data Sharing"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.5,
+      "y": 0.65
+    }
+  },
+  {
+    "name": "Astrato",
+    "website": "https://astrato.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Usage based"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [
+      "Snowflake"
+    ],
+    "features": [
+      "Integrated writeback",
+      "Visualization",
+      "Live query"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.48
+    }
+  },
+  {
+    "name": "Superset",
+    "website": "https://superset.apache.org",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "Clickhouse",
+      "Dremio",
+      "25 +"
+    ],
+    "features": [
+      "Data exploration",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.8,
+      "y": 0.1
+    }
+  },
+  {
+    "name": "GoodData",
+    "website": "https://www.gooddata.com",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Application integration",
+      "Data transformation",
+      "Metrics management",
+      "Data Preparation",
+      "Data Integration",
+      "Visualization",
+      "Ingestion"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.7,
+      "y": 0.35
+    }
+  },
+  {
+    "name": "Lightdash",
+    "website": "https://www.lightdash.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Data Engineers",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Data Sharing",
+      "Self-service",
+      "Dbt powered"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.7,
+      "y": 0.25
+    }
+  },
+  {
+    "name": "Redash",
+    "website": "https://redash.io",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "SQL editor"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.9,
+      "y": 0.2
+    }
+  },
+  {
+    "name": "Adverity.com",
+    "website": "https://www.adverity.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Marketing Analytics",
+      "Business users"
+    ],
+    "deployment": [],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Augmented Analytics"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.6,
+      "y": 0.82
+    }
+  },
+  {
+    "name": "Preset",
+    "website": "https://preset.io",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Embedded analytics",
+      "Data exploration",
+      "Visualization",
+      "SQL IDE"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.2,
+      "y": 0.2
+    }
+  },
+  {
+    "name": "Amazon Quick Sight",
+    "website": "https://aws.amazon.com",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Pay per Session"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Embedded analytics"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.8,
+      "y": 0.35
+    }
+  },
+  {
+    "name": "Mprove",
+    "website": "https://mprove.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Version control",
+      "Self-service"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.6,
+      "y": 0.5
+    }
+  },
+  {
+    "name": "ToucanToco",
+    "website": "https://www.toucantoco.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Self-hosted",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "Azure SQL",
+      "PostgreSQL",
+      "MongoDB"
+    ],
+    "features": [
+      "Create no-code data models",
+      "Embedded analytics",
+      "Dashboard builder",
+      "Data Preparation",
+      "Row permissions",
+      "Visualization",
+      "Glossary"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.4,
+      "y": 0.75
+    }
+  },
+  {
+    "name": "Sisense",
+    "website": "https://www.sisense.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake"
+    ],
+    "features": [
+      "Data Preparation",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.6,
+      "y": 0.4
+    }
+  },
+  {
+    "name": "Holistics.io",
+    "website": "https://www.holistics.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Data Engineers"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "BigQuery",
+      "DataBricks"
+    ],
+    "features": [
+      "Data Integration",
+      "Data warehousing",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.5,
+      "y": 0.55
+    }
+  },
+  {
+    "name": "AnswerRocket",
+    "website": "https://www.answerrocket.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Data Engineers",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Create no-code data models",
+      "Data Integration",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.5,
+      "y": 0.42
+    }
+  },
+  {
+    "name": "Data Pine",
+    "website": "https://www.datapine.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Marketing Analytics",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Metrics management",
+      "Dashboard builder",
+      "Data Preparation",
+      "Visualization",
+      "Data Sharing"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.1,
+      "y": 0.65
+    }
+  },
+  {
+    "name": "Atscale",
+    "website": "https://www.atscale.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [
+      "Redshift"
+    ],
+    "features": [
+      "Data Movement"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.5,
+      "y": 0.45
+    }
+  },
+  {
+    "name": "Baremetrics",
+    "website": "https://baremetrics.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Usage based"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.6,
+      "y": 0.45
+    }
+  },
+  {
+    "name": "Tellery",
+    "website": "https://tellery.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Performance analysis",
+      "Metrics management",
+      "Dashboard builder",
+      "Data Integration"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.7,
+      "y": 0.42
+    }
+  },
+  {
+    "name": "Statsbot",
+    "website": "https://statsbot.co",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Cube"
+    ],
+    "features": [
+      "Data Preparation",
+      "Data Analysis",
+      "Self-service"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.9,
+      "y": 0.4
+    }
+  },
+  {
+    "name": "Polyture",
+    "website": "https://www.polyture.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "Shopify",
+      "MySQL"
+    ],
+    "features": [
+      "Create your own data pipeline",
+      "Dashboard builder",
+      "Data warehousing",
+      "Visualization",
+      "Data Sharing"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.55
+    }
+  },
+  {
+    "name": "Bipp",
+    "website": "https://bipp.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "No-code",
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "Clickhouse"
+    ],
+    "features": [
+      "Create no-code data models",
+      "Dashboard builder",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.5
+    }
+  },
+  {
+    "name": "Veezoo",
+    "website": "https://www.veezoo.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "On-prem",
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "SQL-based language",
+      "Text query"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery"
+    ],
+    "features": [
+      "Dashboard builder",
+      "Data Preparation",
+      "Version control",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.6,
+      "y": 0.72
+    }
+  },
+  {
+    "name": "Trevor",
+    "website": "https://trevor.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery"
+    ],
+    "features": [
+      "Dashboard builder",
+      "Visualization",
+      "Drill down",
+      "SQL IDE"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.7,
+      "y": 0.45
+    }
+  },
+  {
+    "name": "Zepl",
+    "website": "https://www.zepl.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Data Engineers"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "ML models creation",
+      "Data exploration",
+      "Data warehousing",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.9,
+      "y": 0.3
+    }
+  },
+  {
+    "name": "Varada",
+    "website": "https://varada.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Data Engineers",
+      "Analysts"
+    ],
+    "deployment": [
+      "On-prem"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "DataBricks"
+    ],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.9,
+      "y": 0.35
+    }
+  },
+  {
+    "name": "Incorta",
+    "website": "https://www.incorta.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [
+      "MySQL",
+      "Redshift",
+      "Oracle"
+    ],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.7,
+      "y": 0.38
+    }
+  },
+  {
+    "name": "Metric insights",
+    "website": "https://www.metricinsights.com",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.6,
+      "y": 0.3
+    }
+  },
+  {
+    "name": "Cluvio",
+    "website": "https://www.cluvio.com",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Data Engineers"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "SQL",
+      "R"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "Oracle",
+      "MySQL"
+    ],
+    "features": [
+      "Dashboard builder",
+      "Data Preparation"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.9,
+      "y": 0.15
+    }
+  },
+  {
+    "name": "Microsoft analytics",
+    "website": "https://visualbi.com",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "N/A"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.7,
+      "y": 0.2
+    }
+  },
+  {
+    "name": "Macheye",
+    "website": "https://www.macheye.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Marketing Analytics",
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "Dremio",
+      "MySQL"
+    ],
+    "features": [
+      "Embedded analytics",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.6,
+      "y": 0.78
+    }
+  },
+  {
+    "name": "Scuba",
+    "website": "https://www.scuba.io",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only",
+      "Freemium"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Create no-code data models",
+      "Augmented analytics",
+      "Workflow Automation",
+      "Dashboard builder",
+      "Data Preparation",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.85,
+      "y": 0.83
+    }
+  },
+  {
+    "name": "Endor",
+    "website": "https://www.endor.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [],
+    "features": [
+      "Data Preparation",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.7,
+      "y": 0.78
+    }
+  },
+  {
+    "name": "Explo",
+    "website": "https://www.explo.co",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "SMB's"
+    ],
+    "userFocus": [
+      "Marketing Analytics",
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source",
+      "On-prem"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "N/A"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "MySQL",
+      "Clickhouse"
+    ],
+    "features": [
+      "Dashboard builder",
+      "Data Preparation",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.7,
+      "y": 0.6
+    }
+  },
+  {
+    "name": "Einblick",
+    "website": "https://www.einblick.ai",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "No-code",
+      "Python"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "MySQL",
+      "Oracle"
+    ],
+    "features": [
+      "ML models creation",
+      "Visualization",
+      "Data Sharing"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.52
+    }
+  },
+  {
+    "name": "DataHero",
+    "website": "https://datahero.com",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Embedded analytics",
+      "Dashboard builder",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.3,
+      "y": 0.75
+    }
+  },
+  {
+    "name": "Targit",
+    "website": "https://www.targit.com",
+    "generation": "Generation 1 - Traditional BI",
+    "generationShort": "Gen 1",
+    "generationNum": 1,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 0.6,
+      "y": 0.25
+    }
+  },
+  {
+    "name": "Verb data",
+    "website": "https://verbdata.com",
+    "generation": "Generation 3",
+    "generationShort": "Gen 3",
+    "generationNum": 3,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise",
+      "SMB's"
+    ],
+    "userFocus": [
+      "Business users"
+    ],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "MySQL"
+    ],
+    "features": [
+      "Create no-code data models",
+      "Dashboard builder",
+      "Data Modeling",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 2.7,
+      "y": 0.85
+    }
+  },
+  {
+    "name": "Splashback",
+    "website": "https://splashback.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Open-source"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "free trial"
+    ],
+    "queryUsing": [],
+    "dwIntegrations": [],
+    "features": [
+      "Data Sharing"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.7,
+      "y": 0.5
+    }
+  },
+  {
+    "name": "Glean",
+    "website": "https://glean.io",
+    "generation": "Generation 2 - Self-service",
+    "generationShort": "Gen 2",
+    "generationNum": 2,
+    "optimizedFor": [
+      "mid-market",
+      "SMB's"
+    ],
+    "userFocus": [],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Undisclosed"
+    ],
+    "queryUsing": [
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "Redshift",
+      "Snowflake"
+    ],
+    "features": [
+      "Dashboard builder",
+      "Visualization"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 1.8,
+      "y": 0.55
+    }
+  },
+  {
+    "name": "Cube",
+    "website": "https://cube.dev",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Data Engineers",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud",
+      "Self-hosted"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Freemium"
+    ],
+    "queryUsing": [
+      "SQL"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift",
+      "PostgreSQL"
+    ],
+    "features": [
+      "Data Modeling",
+      "Embedded analytics",
+      "Data Integration"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.6,
+      "y": 0.4
+    }
+  },
+  {
+    "name": "Omni",
+    "website": "https://omni.co",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "mid-market",
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "SQL",
+      "No-code"
+    ],
+    "dwIntegrations": [
+      "Snowflake",
+      "BigQuery",
+      "Redshift"
+    ],
+    "features": [
+      "Visualization",
+      "Data Modeling",
+      "Embedded analytics"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.7,
+      "y": 0.8
+    }
+  },
+  {
+    "name": "Virtualitics",
+    "website": "https://virtualitics.com",
+    "generation": "Generation 4+",
+    "generationShort": "Gen 4+",
+    "generationNum": 4,
+    "optimizedFor": [
+      "Enterprise"
+    ],
+    "userFocus": [
+      "Business users",
+      "Analysts"
+    ],
+    "deployment": [
+      "Cloud",
+      "On-prem"
+    ],
+    "dataModeling": null,
+    "noCodeInterface": null,
+    "pricing": [
+      "Contact Only"
+    ],
+    "queryUsing": [
+      "No-code",
+      "Python"
+    ],
+    "dwIntegrations": [
+      "Snowflake"
+    ],
+    "features": [
+      "Visualization",
+      "Data exploration",
+      "ML models creation"
+    ],
+    "nativeConnectors": null,
+    "quadrant": {
+      "x": 3.6,
+      "y": 0.68
+    }
+  }
+]
