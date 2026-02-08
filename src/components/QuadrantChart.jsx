@@ -84,7 +84,7 @@ const quadrantPlugin = {
     ctx.stroke();
 
     // ── Horizontal midline (business/technical divider) ──
-    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+    ctx.strokeStyle = '#9ca3af';
     ctx.lineWidth = 1;
     ctx.beginPath();
     ctx.moveTo(left, midY);
@@ -92,7 +92,7 @@ const quadrantPlugin = {
     ctx.stroke();
 
     // ── Vertical generation dividers ──
-    ctx.strokeStyle = 'rgba(0,0,0,0.10)';
+    ctx.strokeStyle = '#d1d5db';
     ctx.lineWidth = 1;
     [1.5, 2.5, 3.25].forEach(val => {
       const px = x.getPixelForValue(val);
