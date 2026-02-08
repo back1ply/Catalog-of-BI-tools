@@ -21,10 +21,10 @@ const GEN_COLORS = {
 
 // Generation column boundaries in data units
 const GEN_BOUNDS = [
-  { min: 0.3, max: 1.5, label: 'Generation 1', color: '#6366f1' },
-  { min: 1.5, max: 2.5, label: 'Generation 2', color: '#3b82f6' },
-  { min: 2.5, max: 3.25, label: 'Generation 3', color: '#10b981' },
-  { min: 3.25, max: 4.2, label: 'Gen 4+', color: '#f59e0b' },
+  { min: 0.3, max: 1.5, label: 'Generation 1', color: '#6366f1', zoneBg: 'rgba(99,102,241,0.04)', zoneBot: 'rgba(99,102,241,0.025)' },
+  { min: 1.5, max: 2.5, label: 'Generation 2', color: '#3b82f6', zoneBg: 'rgba(59,130,246,0.04)', zoneBot: 'rgba(59,130,246,0.025)' },
+  { min: 2.5, max: 3.25, label: 'Generation 3', color: '#10b981', zoneBg: 'rgba(16,185,129,0.04)', zoneBot: 'rgba(16,185,129,0.025)' },
+  { min: 3.25, max: 4.2, label: 'Gen 4+', color: '#f59e0b', zoneBg: 'rgba(245,158,11,0.04)', zoneBot: 'rgba(245,158,11,0.025)' },
 ];
 
 const quadrantPlugin = {
@@ -37,16 +37,12 @@ const quadrantPlugin = {
     const midY = y.getPixelForValue(0.5);
 
     // Subtle quadrant zone fills per generation column
-    GEN_BOUNDS.forEach((gen, i) => {
+    GEN_BOUNDS.forEach(gen => {
       const x1 = x.getPixelForValue(gen.min);
       const x2 = x.getPixelForValue(gen.max);
-      // Alternate slightly different tints for top/bottom
-      const alpha = 0.035;
-      // Top half (business)
-      ctx.fillStyle = gen.color.replace(')', `,${alpha})`).replace('rgb', 'rgba');
+      ctx.fillStyle = gen.zoneBg;
       ctx.fillRect(x1, top, x2 - x1, midY - top);
-      // Bottom half (technical) - even subtler
-      ctx.fillStyle = gen.color.replace(')', `,${alpha * 0.6})`).replace('rgb', 'rgba');
+      ctx.fillStyle = gen.zoneBot;
       ctx.fillRect(x1, midY, x2 - x1, bottom - midY);
     });
   },
