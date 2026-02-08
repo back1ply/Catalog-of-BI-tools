@@ -171,75 +171,80 @@ const INFERRED_GEN = {
   'Splashback': 'Generation 2 - Self-service',
 };
 
-// ── Quadrant coordinates from image ──
-// x = generation (1-4), y = user focus (0=technical, 1=business)
+// ── Quadrant coordinates from reference image ──
+// x = generation position, y = user focus (0=technical, 1=business)
+// Carefully mapped from the Castor quadrant reference image
 const QUADRANT_COORDS = {
-  // Gen 1 - Technical
-  'Superset':          { x: 0.8,  y: 0.1 },
-  'Cluvio':            { x: 0.9,  y: 0.15 },
-  'Redash':            { x: 0.9,  y: 0.2 },
-  'Microsoft analytics': { x: 0.7, y: 0.2 },
-  'Metric insights':   { x: 0.6,  y: 0.3 },
-  'Targit':            { x: 0.6,  y: 0.25 },
-  // Gen 1 - Business
-  'Amazon Quick Sight':{ x: 0.8,  y: 0.35 },
-  'Preset':            { x: 1.2,  y: 0.2 },
-  // Gen 2 - Technical
-  'Domo':              { x: 1.6,  y: 0.38 },
-  'Incorta':           { x: 1.7,  y: 0.38 },
-  'Alteryx':           { x: 1.8,  y: 0.35 },
-  'Looker':            { x: 1.9,  y: 0.38 },
-  // Gen 2 - Mixed
-  'Tableau':           { x: 1.4,  y: 0.6 },
-  'Qlik view':         { x: 1.3,  y: 0.52 },
-  'Power BI':          { x: 1.5,  y: 0.45 },
-  'Holistics.io':      { x: 1.5,  y: 0.55 },
-  'Data Pine':         { x: 1.1,  y: 0.65 },
-  'Metabase':          { x: 1.5,  y: 0.7 },
-  // Gen 2 - Self-service tools (positioned in Gen 2)
-  'Mode':              { x: 3.5,  y: 0.38 },
-  'Mprove':            { x: 1.6,  y: 0.5 },
-  'Astrato':           { x: 1.8,  y: 0.48 },
-  'Baremetrics':       { x: 1.6,  y: 0.45 },
-  'Tellery':           { x: 1.7,  y: 0.42 },
-  'Bipp':              { x: 1.8,  y: 0.5 },
-  'Trevor':            { x: 1.7,  y: 0.45 },
-  'Varada':            { x: 1.9,  y: 0.35 },
-  'Incorta':           { x: 1.7,  y: 0.38 },
-  'Glean':             { x: 1.8,  y: 0.55 },
-  'Explo':             { x: 1.7,  y: 0.6 },
-  'Einblick':          { x: 1.8,  y: 0.52 },
-  // Gen 2 self-service positioned elsewhere
-  'Statsbot':          { x: 1.9,  y: 0.4 },
-  'Polyture':          { x: 1.8,  y: 0.55 },
-  'DataHero':          { x: 2.3,  y: 0.75 },
-  'Zepl':              { x: 1.9,  y: 0.3 },
-  'Splashback':        { x: 1.7,  y: 0.5 },
-  // Gen 3 - Business (top-right quadrant in image)
-  'Adverity.com':      { x: 2.6,  y: 0.82 },
-  'Verb data':         { x: 2.7,  y: 0.85 },
-  'Scuba':             { x: 2.85, y: 0.83 },
-  'Whaly':             { x: 3.0,  y: 0.85 },
-  'Endor':             { x: 2.7,  y: 0.78 },
-  'Gaphext':           { x: 2.5,  y: 0.7 },
-  'Y42':               { x: 2.7,  y: 0.7 },
-  'ToucanToco':        { x: 2.4,  y: 0.75 },
-  'Acho':              { x: 2.5,  y: 0.65 },
-  'Veezoo':            { x: 2.6,  y: 0.72 },
-  'Macheye':           { x: 2.6,  y: 0.78 },
-  // Gen 3 - Technical
-  'AnswerRocket':      { x: 2.5,  y: 0.42 },
-  'Sisense':           { x: 2.6,  y: 0.4 },
-  'Lightdash':         { x: 2.7,  y: 0.25 },
-  // Gen 3 - Mixed
-  'Atscale':           { x: 2.5,  y: 0.45 },
-  // Gen 4+ - Business
-  'Omni':              { x: 3.7,  y: 0.8 },
-  'Sigma':             { x: 3.8,  y: 0.78 },
-  'Virtualitics':      { x: 3.6,  y: 0.68 },
-  // Gen 4+ - Technical/Mixed
-  'Cube':              { x: 3.6,  y: 0.4 },
-  'GoodData':          { x: 3.7,  y: 0.35 },
+  // ═══ GEN 1 — bottom-left column ═══
+  // Technical (bottom half)
+  'Superset':            { x: 0.55, y: 0.06 },
+  'Cluvio':              { x: 0.85, y: 0.04 },
+  'Redash':              { x: 0.95, y: 0.10 },
+  'Microsoft analytics': { x: 0.85, y: 0.15 },
+  'Metric insights':     { x: 0.55, y: 0.28 },
+  'Targit':              { x: 0.65, y: 0.22 },
+  'Amazon Quick Sight':  { x: 0.85, y: 0.35 },
+  'Preset':              { x: 1.25, y: 0.18 },
+  // Business (top half) — datapine is in Gen 1 column in the image
+  'Data Pine':           { x: 0.85, y: 0.72 },
+
+  // ═══ GEN 2 — second column ═══
+  // Business (top half)
+  'Metabase':            { x: 1.70, y: 0.92 },
+  'Tableau':             { x: 1.60, y: 0.82 },
+  'Holistics.io':        { x: 1.85, y: 0.60 },
+  'Qlik view':           { x: 1.65, y: 0.58 },
+  'Power BI':            { x: 1.70, y: 0.64 },
+  // Technical (bottom half)
+  'Domo':                { x: 1.65, y: 0.42 },
+  'Incorta':             { x: 1.78, y: 0.40 },
+  'Alteryx':             { x: 1.85, y: 0.38 },
+  'Looker':              { x: 1.98, y: 0.40 },
+  // Gen 2 tools not clearly in the reference — position by user focus
+  'Mprove':              { x: 1.72, y: 0.55 },
+  'Astrato':             { x: 1.90, y: 0.44 },
+  'Baremetrics':         { x: 1.68, y: 0.48 },
+  'Tellery':             { x: 1.82, y: 0.36 },
+  'Bipp':                { x: 1.92, y: 0.52 },
+  'Trevor':              { x: 1.78, y: 0.34 },
+  'Varada':              { x: 2.00, y: 0.30 },
+  'Glean':               { x: 1.88, y: 0.56 },
+  'Explo':               { x: 1.80, y: 0.62 },
+  'Einblick':            { x: 1.92, y: 0.54 },
+  'Statsbot':            { x: 2.05, y: 0.32 },
+  'Polyture':            { x: 2.00, y: 0.56 },
+  'DataHero':            { x: 2.10, y: 0.70 },
+  'Zepl':                { x: 2.05, y: 0.25 },
+  'Splashback':          { x: 1.85, y: 0.46 },
+
+  // ═══ GEN 3 — third column ═══
+  // Business (top half — the dense cluster at top)
+  'Adverity.com':        { x: 2.65, y: 0.92 },
+  'Verb data':           { x: 2.75, y: 0.90 },
+  'Scuba':               { x: 2.95, y: 0.90 },
+  'Whaly':               { x: 3.10, y: 0.92 },
+  'ToucanToco':          { x: 2.58, y: 0.86 },
+  'Endor':               { x: 2.82, y: 0.84 },
+  'Gaphext':             { x: 2.72, y: 0.72 },
+  'Y42':                 { x: 2.82, y: 0.72 },
+  'Acho':                { x: 2.65, y: 0.68 },
+  'Veezoo':              { x: 2.70, y: 0.76 },
+  'Macheye':             { x: 2.90, y: 0.80 },
+  // Technical (bottom half)
+  'AnswerRocket':        { x: 2.65, y: 0.40 },
+  'Sisense':             { x: 2.75, y: 0.36 },
+  'Lightdash':           { x: 2.80, y: 0.20 },
+  'Atscale':             { x: 2.60, y: 0.34 },
+
+  // ═══ GEN 4+ — right column ═══
+  // Business (top half)
+  'Omni':                { x: 3.55, y: 0.88 },
+  'Sigma':               { x: 3.75, y: 0.88 },
+  'Virtualitics':        { x: 3.55, y: 0.68 },
+  // Technical/Mixed (bottom half)
+  'Mode':                { x: 3.45, y: 0.46 },
+  'Cube':                { x: 3.60, y: 0.38 },
+  'GoodData':            { x: 3.65, y: 0.28 },
 };
 
 // ── Transform rows ──
@@ -311,7 +316,7 @@ const EXTRA_TOOLS = [
     dwIntegrations: ['Snowflake', 'BigQuery', 'Redshift', 'PostgreSQL'],
     features: ['Data Modeling', 'Embedded analytics', 'Data Integration'],
     nativeConnectors: null,
-    quadrant: { x: 3.6, y: 0.4 },
+    quadrant: { x: 3.60, y: 0.38 },
   },
   {
     name: 'Omni',
@@ -329,7 +334,7 @@ const EXTRA_TOOLS = [
     dwIntegrations: ['Snowflake', 'BigQuery', 'Redshift'],
     features: ['Visualization', 'Data Modeling', 'Embedded analytics'],
     nativeConnectors: null,
-    quadrant: { x: 3.7, y: 0.8 },
+    quadrant: { x: 3.55, y: 0.88 },
   },
   {
     name: 'Virtualitics',
@@ -347,7 +352,7 @@ const EXTRA_TOOLS = [
     dwIntegrations: ['Snowflake'],
     features: ['Visualization', 'Data exploration', 'ML models creation'],
     nativeConnectors: null,
-    quadrant: { x: 3.6, y: 0.68 },
+    quadrant: { x: 3.55, y: 0.68 },
   },
 ];
 
