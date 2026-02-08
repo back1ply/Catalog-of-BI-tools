@@ -19,7 +19,14 @@ const GEN_COLORS = {
   0: { bg: 'rgba(156, 163, 175, 0.7)', border: '#9ca3af' },
 };
 
-// Custom plugin to draw quadrant backgrounds, dividers, and gen labels
+// Generation column boundaries in data units
+const GEN_BOUNDS = [
+  { min: 0.3, max: 1.5, label: 'Generation 1', color: '#6366f1' },
+  { min: 1.5, max: 2.5, label: 'Generation 2', color: '#3b82f6' },
+  { min: 2.5, max: 3.25, label: 'Generation 3', color: '#10b981' },
+  { min: 3.25, max: 4.2, label: 'Gen 4+', color: '#f59e0b' },
+];
+
 const quadrantPlugin = {
   id: 'quadrantBackground',
   beforeDraw(chart) {
@@ -27,79 +34,105 @@ const quadrantPlugin = {
     if (!chartArea) return;
     const { left, right, top, bottom } = chartArea;
     const { x, y } = chart.scales;
-    const midX = x.getPixelForValue(2.5);
     const midY = y.getPixelForValue(0.5);
 
-    // Quadrant zone fills
-    const zones = [
-      { x1: left, x2: midX, y1: top,    y2: midY,   color: 'rgba(99, 102, 241, 0.04)' },
-      { x1: midX, x2: right, y1: top,    y2: midY,   color: 'rgba(16, 185, 129, 0.04)' },
-      { x1: left, x2: midX, y1: midY,   y2: bottom, color: 'rgba(59, 130, 246, 0.04)' },
-      { x1: midX, x2: right, y1: midY,   y2: bottom, color: 'rgba(245, 158, 11, 0.04)' },
-    ];
-    zones.forEach(z => {
-      ctx.fillStyle = z.color;
-      ctx.fillRect(z.x1, z.y1, z.x2 - z.x1, z.y2 - z.y1);
+    // Subtle quadrant zone fills per generation column
+    GEN_BOUNDS.forEach((gen, i) => {
+      const x1 = x.getPixelForValue(gen.min);
+      const x2 = x.getPixelForValue(gen.max);
+      // Alternate slightly different tints for top/bottom
+      const alpha = 0.035;
+      // Top half (business)
+      ctx.fillStyle = gen.color.replace(')', `,${alpha})`).replace('rgb', 'rgba');
+      ctx.fillRect(x1, top, x2 - x1, midY - top);
+      // Bottom half (technical) - even subtler
+      ctx.fillStyle = gen.color.replace(')', `,${alpha * 0.6})`).replace('rgb', 'rgba');
+      ctx.fillRect(x1, midY, x2 - x1, bottom - midY);
     });
-
-    // Dashed divider lines
-    ctx.save();
-    ctx.strokeStyle = 'rgba(0,0,0,0.1)';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([6, 4]);
-    ctx.beginPath();
-    ctx.moveTo(midX, top);
-    ctx.lineTo(midX, bottom);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(left, midY);
-    ctx.lineTo(right, midY);
-    ctx.stroke();
-    ctx.restore();
-
-    // Vertical gen boundary lines (lighter)
-    ctx.save();
-    ctx.strokeStyle = 'rgba(0,0,0,0.05)';
-    ctx.lineWidth = 1;
-    ctx.setLineDash([3, 6]);
-    [1.5, 3.25].forEach(val => {
-      const px = x.getPixelForValue(val);
-      ctx.beginPath();
-      ctx.moveTo(px, top);
-      ctx.lineTo(px, bottom);
-      ctx.stroke();
-    });
-    ctx.restore();
   },
   afterDraw(chart) {
     const { ctx, chartArea } = chart;
     if (!chartArea) return;
     const { left, right, top, bottom } = chartArea;
     const { x, y } = chart.scales;
+    const midY = y.getPixelForValue(0.5);
 
-    // Generation labels below chart area
     ctx.save();
-    ctx.fillStyle = '#6b7280';
-    ctx.font = '600 12px system-ui, sans-serif';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'top';
-    const genLabels = [
-      { val: 0.9,  label: 'Generation 1' },
-      { val: 2.0,  label: 'Generation 2' },
-      { val: 2.9,  label: 'Generation 3' },
-      { val: 3.75, label: 'Gen 4+' },
-    ];
-    genLabels.forEach(g => {
-      ctx.fillText(g.label, x.getPixelForValue(g.val), bottom + 8);
+
+    // ── Main axes (solid dark lines) ──
+    ctx.strokeStyle = '#374151';
+    ctx.lineWidth = 1.5;
+
+    // Y-axis (left edge)
+    ctx.beginPath();
+    ctx.moveTo(left, bottom + 2);
+    ctx.lineTo(left, top - 6);
+    ctx.stroke();
+    // Y-axis arrow
+    ctx.beginPath();
+    ctx.moveTo(left - 4, top);
+    ctx.lineTo(left, top - 8);
+    ctx.lineTo(left + 4, top);
+    ctx.stroke();
+
+    // X-axis (bottom edge)
+    ctx.beginPath();
+    ctx.moveTo(left - 2, bottom);
+    ctx.lineTo(right + 6, bottom);
+    ctx.stroke();
+    // X-axis arrow
+    ctx.beginPath();
+    ctx.moveTo(right, bottom - 4);
+    ctx.lineTo(right + 8, bottom);
+    ctx.lineTo(right, bottom + 4);
+    ctx.stroke();
+
+    // ── Horizontal midline (business/technical divider) ──
+    ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(left, midY);
+    ctx.lineTo(right, midY);
+    ctx.stroke();
+
+    // ── Vertical generation dividers ──
+    ctx.strokeStyle = 'rgba(0,0,0,0.10)';
+    ctx.lineWidth = 1;
+    [1.5, 2.5, 3.25].forEach(val => {
+      const px = x.getPixelForValue(val);
+      ctx.beginPath();
+      ctx.moveTo(px, top);
+      ctx.lineTo(px, bottom);
+      ctx.stroke();
     });
 
-    // Y-axis labels (Business / Technical) on left
-    ctx.fillStyle = '#6b7280';
-    ctx.font = '600 12px system-ui, sans-serif';
+    // ── Generation labels (colored, centered in each column) ──
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'top';
+    GEN_BOUNDS.forEach(gen => {
+      const cx = (x.getPixelForValue(gen.min) + x.getPixelForValue(gen.max)) / 2;
+      ctx.font = '700 13px system-ui, sans-serif';
+      ctx.fillStyle = gen.color;
+      ctx.fillText(gen.label, cx, bottom + 8);
+    });
+
+    // ── "Generation" label at far right of x-axis ──
+    ctx.fillStyle = '#374151';
+    ctx.font = '600 13px system-ui, sans-serif';
     ctx.textAlign = 'right';
-    ctx.textBaseline = 'middle';
-    ctx.fillText('Business users', left - 8, y.getPixelForValue(0.95));
-    ctx.fillText('Technical users', left - 8, y.getPixelForValue(0.05));
+    ctx.textBaseline = 'top';
+    ctx.fillText('Generation', right + 4, bottom + 8);
+
+    // ── Y-axis labels ──
+    ctx.fillStyle = '#374151';
+    ctx.font = '600 13px system-ui, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillText('Business users', left + 2, top - 22);
+
+    ctx.textBaseline = 'bottom';
+    ctx.fillText('Technical users', left + 2, bottom + 36);
+
     ctx.restore();
   },
 };
@@ -155,10 +188,10 @@ export default function QuadrantChart({ data, highlightedTool, onHighlight, onSe
     maintainAspectRatio: false,
     layout: {
       padding: {
-        bottom: 28,
-        left: 100,
-        top: 4,
-        right: 16,
+        bottom: 40,
+        left: 8,
+        top: 24,
+        right: 80,
       },
     },
     scales: {
@@ -168,7 +201,7 @@ export default function QuadrantChart({ data, highlightedTool, onHighlight, onSe
         title: { display: false },
         ticks: { display: false },
         grid: { display: false },
-        border: { display: true, color: '#d1d5db' },
+        border: { display: false },
       },
       y: {
         min: 0,
@@ -176,7 +209,7 @@ export default function QuadrantChart({ data, highlightedTool, onHighlight, onSe
         title: { display: false },
         ticks: { display: false },
         grid: { display: false },
-        border: { display: true, color: '#d1d5db' },
+        border: { display: false },
       },
     },
     plugins: {
@@ -250,7 +283,7 @@ export default function QuadrantChart({ data, highlightedTool, onHighlight, onSe
           Reset Zoom
         </button>
       </div>
-      <div className="relative" style={{ height: '520px' }}>
+      <div className="relative" style={{ height: '540px' }}>
         <Scatter ref={chartRef} data={chartData} options={options} />
       </div>
       <p className="text-xs text-gray-400 mt-2 text-center">
