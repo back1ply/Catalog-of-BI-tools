@@ -12,7 +12,7 @@ export default function Hero({ totalTools, filteredCount, activeFilterCount }) {
         <p className="mt-1 text-sm text-gray-400">
           Based on the{' '}
           <a
-            href="https://notion.castordoc.com/catalog-of-bi-tools"
+            href="https://castordoc.notion.site/Data-Catalog-Tools-Benchmark-4bcbee621de243b6a34deaebd28180d0"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 hover:text-blue-700 underline underline-offset-2"

@@ -4,7 +4,7 @@ An interactive web app showcasing 54 Business Intelligence tools across 4 genera
 
 **Live:** [back1ply.github.io/Catalog-of-BI-tools](https://back1ply.github.io/Catalog-of-BI-tools/)
 
-Based on the [Castor Catalog of BI Tools](https://notion.castordoc.com/catalog-of-bi-tools).
+Based on the [Castor Catalog of BI Tools](https://castordoc.notion.site/Data-Catalog-Tools-Benchmark-4bcbee621de243b6a34deaebd28180d0).
 
 ## Features
 
